@@ -2,7 +2,7 @@
 This repository houses code for detection and classification of cardiac arrhythmia
 
 
-1)	Data source
+**1)	Data source**
 ECG signals from the MIT-BIH Arrhythmia Database were the dataset used in this approach in training the machine learning model. It contains 48 recordings from 47 participants with each recording having a duration of 30 minutes [11]. Each ECG signal has an annotation file which labels its respective R peaks according to their respective types of heartbeats. Each signal was pre-processed by passing them through a baseline wander removal algorithm and a Butterworth band-pass filter to remove noise from artefacts.
 
 Each signal was then split with a sampling rate of 300 into its respective R peaks to create a dataset of features corresponding with their respective labels from the annotation files. Samples annotated as non-beat types and those with null values in their annotations were dropped from the dataset resulting in a dataset of 109383 heartbeats ranging across 14 heartbeat types (13 arrhythmic classes and 1 normal class). The arrhythmia classes now included paced beat, atrial premature contraction, ventricular escape beat, fusion of ventricular and normal beat, nodal (junctional) premature beat, left bundle branch block, right bundle branch block, supraventricular premature beat, premature ventricular contraction, aberrated atrial premature beat, atrial escape beat, the fusion of paced and normal beat and nodal (junctional) escape beat, together with a class for normal heartbeat.
