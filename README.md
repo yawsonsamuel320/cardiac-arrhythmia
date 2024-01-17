@@ -1,5 +1,5 @@
 # cardiac-arrhythmia
-This repository houses code for detection and classification of cardiac arrhythmia
+This repository houses code for detection and classification of cardiac arrhythmia. See: arrhythmia_detection_ml_pipeline.ipynb
 
 
 **1)	Data source**                           
